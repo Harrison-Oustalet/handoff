@@ -1,0 +1,74 @@
+McDonald’s Regional Operations & Marketing Sync — Fake Meeting Transcript
+Date: May 8, 2026 | Duration: ~42 minutes | Location: Conference room / Teams
+
+---
+
+[00:02] Jamie Chen (Regional Ops Lead): Thanks everyone for joining. Quick agenda: drive-thru times in the North corridor, the Grimace birthday promo follow-up, and equipment maintenance backlog. Let’s keep actions tight.
+
+[00:48] Marcus Webb (Franchise Partner Rep): North corridor — we’re still above 4:30 average at three locations. Crewing is the main issue post-lunch rush.
+
+[01:15] Jamie Chen: Understood. I want a staffing heat map for those three stores by end of week — who owns that?
+
+[01:28] Priya Nair (HR Coordinator): I’ll pull scheduling versus foot traffic from the POS exports. I need store managers to confirm any blackout dates by Thursday.
+
+[01:52] Marcus Webb: I’ll ping the GMs tonight. They owe us that anyway.
+
+[02:10] Jamie Chen: Good. Action one: Priya — staffing analysis for North corridor stores 214, 089, and 156, due EOD Friday. Marcus — GM confirmations by Thursday COB.
+
+[02:45] Sofia Alvarez (Marketing): On Grimace — social blew up last year; legal wants every partner asset tagged before we repost anything from franchisee accounts.
+
+[03:12] Leo Park (Legal, remote): Correct. No modified logos, no “official” claims unless it’s from corporate handles. I’ll send the one-pager again.
+
+[03:35] Sofia Alvarez: Action for me: finalize the franchisee social toolkit — checklist plus approved captions — by Tuesday. Leo, if you can sign off by Wednesday morning, we can ship before the campaign window.
+
+[04:02] Leo Park: Works. I’ll block Wednesday 9 a.m. for review.
+
+[04:18] Jamie Chen: Captured. Sofia — toolkit Tuesday; Leo — legal sign-off Wednesday a.m.
+
+[04:55] Dana Okonkwo (Facilities): Fryer PMs are behind at six sites. Vendor lead time on parts is three weeks now. I’m proposing we batch two sites per week starting the 19th.
+
+[05:22] Marcus Webb: Franchisees will ask who pays if we slip past warranty. Can we get a clear cost split memo?
+
+[05:41] Dana Okonkwo: I’ll draft it with Finance — 60/40 split where warranty lapsed, corporate covers emergency shutdown only. Action: Dana — cost split memo to Marcus and franchise council by Monday.
+
+[06:15] Jamie Chen: And Dana — publish the fryer PM schedule to the ops portal by Friday so stores stop getting surprise visits.
+
+[06:32] Dana Okonkwo: On it.
+
+[07:05] Priya Nair: Training question — new kiosk flow is rolling to twelve stores. Do we need a second trainer or extend the pilot?
+
+[07:28] Jamie Chen: Let’s extend the pilot one week and add one floating trainer. Priya — book the trainer and update the rollout calendar; Marcus — tell the pilot GMs by tomorrow.
+
+[08:00] Marcus Webb: Will do.
+
+[08:12] Sofia Alvarez: Small thing — McCafé iced lineup photography for the app. Creative needs a real store shoot, not stock. Who can sponsor a location?
+
+[08:35] Jamie Chen: Store 089 has the new cold brew tap. Sofia — coordinate with Marcus for a shoot window next week; Marcus — clear it with the GM and minimal disruption — two hours max.
+
+[09:05] Marcus Webb: Got it.
+
+[09:18] Leo Park: Remind everyone: no recording customer faces without release forms. Creative must use staff-only B-roll or blurred backgrounds.
+
+[09:35] Sofia Alvarez: I’ll add that to the shoot brief. Action: Sofia — updated brief with privacy notes by end of day.
+
+[10:02] Jamie Chen: Round-robin — any blockers?
+
+[10:15] Dana Okonkwo: Only parts delay on the shake machine at 156. I escalated to the vendor; expecting an ETA Friday.
+
+[10:35] Jamie Chen: Dana — if no ETA by Friday, escalate to me and we’ll swap in a loaner from the depot.
+
+[10:52] Jamie Chen: Summary of tasks:
+  • Priya — North corridor staffing analysis (Fri); kiosk trainer booking + rollout calendar update.
+  • Marcus — GM blackout confirmations (Thu); pilot GM comms (tomorrow); McCafé shoot clearance at 089.
+  • Sofia — Franchisee Grimace toolkit (Tue); shoot brief with privacy (EOD); coordinate shoot with Marcus.
+  • Leo — Resend partner asset one-pager; legal sign-off on toolkit Wed 9 a.m.
+  • Dana — Fryer cost split memo (Mon); PM schedule on ops portal (Fri); shake machine escalation path if no vendor ETA.
+  • Jamie — Loaner shake machine decision if vendor misses Friday.
+
+[11:45] Jamie Chen: Next sync same time Thursday. Thanks, everyone.
+
+[11:52] [Meeting ended]
+
+---
+
+END OF TRANSCRIPT
