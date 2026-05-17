@@ -25,10 +25,11 @@ const analysisStatus = document.getElementById("analysis-status");
 const analysisTasksBlock = document.getElementById("analysis-tasks-block");
 const analysisTaskList = document.getElementById("analysis-task-list");
 
+const API_BASE = "https://handoff-backend-ozmk.onrender.com";
 const clientId = "362d872b-594c-81f3-b531-0037bb234034";
-const redirectUri = "https://unfrozen-fragment-science.ngrok-free.dev/index.html";
+const redirectUri = "https://harrison-oustalet.github.io/frontend-analyzer/";
 const notionUrl =
-`https://api.notion.com/v1/oauth/authorize?client_id=${clientId}&response_type=code&owner=user&redirect_uri=${redirectUri}`;
+`https://api.notion.com/v1/oauth/authorize?client_id=${clientId}&response_type=code&owner=user&redirect_uri=${encodeURIComponent(redirectUri)}`;
 
 let numOfTasks = 0;
 
@@ -40,11 +41,13 @@ const code = params.get("code");
 
 if (code) {
   console.log(code);
-  window.history.replaceState({}, document.title, "/index.html");
+  window.history.replaceState({}, document.title, window.location.pathname);
   const notionButton = document.getElementById("analysis-notion-button");
-  notionButton.remove();
+  if (notionButton) {
+    notionButton.remove();
+  } ;
   document.querySelector(".notion-status").hidden = false;
-  fetch("https://your-backend.ngrok-free.app/notion/exchange", {
+  fetch(`${API_BASE}/notion/exchange`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
@@ -209,17 +212,19 @@ async function getGeminiResponse(text, fileName) {
   ]
   };
   try {
-    const response = await fetch(url, {
+    const response = await fetch("https://handoff-backend-ozmk.onrender.com/gemini", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(payload)
-    });
+      body: JSON.stringify({ text })
+    });    
 
     numOfTasks = 0;
     const data = await response.json();
-    const geminiText = data.candidates[0].content.parts[0].text;
+    if (!data.candidates || !data.candidates[0]) {
+      throw new Error("No response from Gemini");
+    }
     const parsed = JSON.parse(geminiText);
     CURRENT_TASKS = parsed.tasks.map(task => {
     return `${task.assignee ? task.assignee + ": " : ""}${task.task}${task.due_date && task.due_date !== "Not specified" ? " due " + task.due_date : ""}`;
