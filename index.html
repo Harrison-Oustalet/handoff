@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!---->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <title>Handoff</title>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <a class="brand" href="#" aria-label="Handoff home">
+        <span class="brand__hand">Hand</span><span class="brand__off">Off</span>
+      </a>
+    </div>
+  </div>
+  <div class="top-div">
+    <h1 class="header-name" style="scale: 0.9;">Turn Meetings Into Tasks Instantly</h1>
+    <h3 class="subheader">Upload your meeting transcript and instantly extract tasks, owners, and deadlines—no more missed action items.</h3>
+    <div class="hero-actions">
+      <button type="button" class="button-file">Analyze Transcript</button>
+    </div>
+    <div id="analysis-panel" class="analysis-panel" hidden>
+      <div class="analysis-panel__strip">
+        <span id="analysis-word-count" class="analysis-panel__words"></span>
+        <span class="analysis-panel__status-line">
+          <span class="analysis-panel__status-prefix">Status:</span>
+          <span id="analysis-status" class="analysis-panel__status-value"></span>
+        </span>
+      </div>
+      <div id="analysis-tasks-block" class="analysis-panel__tasks" hidden>
+        <span class="analysis-panel__tasks-label">Tasks</span>
+        <ul id="analysis-task-list" class="analysis-panel__task-list"></ul>
+        <button type="button" id="analysis-notion-button" class="analysis-panel__notion-button">Continue with Notion</button>    
+      </div>
+      <div id="analysis-syncing" class="analysis-panel__syncing" hidden>
+        <p class="notion-status" hidden>Syncing with Notion...</p>
+      </div>
+    </div>
+  </div>
+  <div class="features-div">
+    <div style="display: flex; align-items: center; gap: 40px; flex-direction: row; justify-content: center;">
+      <span class="logos--notion-icon"></span>
+      <p>Organize and manage all your transcripts and analyses effortlessly. HandOff integrates seamlessly with <span style="font-weight: 700;">Notion</span>, allowing you to sync your work directly to your workspace.</p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 40px; flex-direction: row; justify-content: center;">
+      <p>Powered by <span style="font-weight: 700;">Google Gemini's API</span>, we instantly extract and organize tasks from your meeting transcripts. This advanced AI processes your content in real-time to identify action items, owners, and deadlines—delivering results faster than manual review.</p>
+      <span class="vscode-icons--file-type-gemini"></span>
+    </div>
+  </div>
+  <div id="upload-modal-scrim" class="upload-modal-scrim" hidden aria-hidden="true"></div>
+  <dialog class="upload-modal" id="upload-modal" aria-labelledby="upload-modal-title">
+    <div class="upload-modal__panel">
+      <div class="upload-modal__header">
+        <h2 id="upload-modal-title" class="upload-modal__title">Add your transcript</h2>
+        <button type="button" class="upload-modal__close" aria-label="Close dialog">&times;</button>
+      </div>
+      <p class="upload-modal__hint">Upload a text file or drag and drop it into the area below.</p>
+      <div class="upload-modal__dropzone" id="upload-dropzone" tabindex="0" role="region" aria-label="Transcript file drop zone">
+        <input type="file" id="transcript-file" class="upload-modal__file-input" accept=".txt,.text,.md,.csv,.log,text/plain">
+        <span class="upload-modal__dropzone-text">Drag and drop a transcript file here</span>
+        <span class="upload-modal__dropzone-or">or</span>
+        <button type="button" class="upload-modal__browse">Choose file</button>
+      </div>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
